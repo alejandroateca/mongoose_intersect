@@ -1,0 +1,8 @@
+{
+  "name": "My Devcontainer",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8000, 3306, 27017],
+  "postCreateCommand": "npm install"
+}
