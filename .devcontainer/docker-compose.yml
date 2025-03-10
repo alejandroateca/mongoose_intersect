@@ -1,0 +1,15 @@
+version: "3"
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile  
+    volumes:
+      - ../:/workspace
+    # etc.
+  mysql:
+    image: mysql:8
+    # ...
+  mongodb:
+    image: mongo:latest
+    # ...
